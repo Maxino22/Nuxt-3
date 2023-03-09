@@ -11,10 +11,15 @@
 			Quasi omnis blanditiis facere! Culpa impedit temporibus aperiam iste
 			quasi.
 		</p>
+		<p class="text-2xl font-bold">{{ Money }}</p>
+		<p>{{ data }}</p>
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch('/api/ninja')
+const { data: Money } = await useFetch('/api/currency/KES')
+</script>
 
 <style scoped>
 h1 {

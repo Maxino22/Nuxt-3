@@ -8,6 +8,11 @@
 					<li><NuxtLink to="/about">About</NuxtLink></li>
 
 					<li><NuxtLink class="btn" to="/products">Products</NuxtLink></li>
+					<li>
+						<NuxtLink class="text-sm font-semibold" to="/products/abc"
+							>Products not exist</NuxtLink
+						>
+					</li>
 				</ul>
 			</nav>
 		</header>
